@@ -2,6 +2,7 @@ using Sirenix.OdinInspector.Editor;
 using System;
 using System.Linq;
 using Audio;
+using Player;
 using UnityEditor;
 public class DataManagerWindow : OdinMenuEditorWindow
     {
@@ -20,11 +21,14 @@ public class DataManagerWindow : OdinMenuEditorWindow
         protected override OdinMenuTree BuildMenuTree()
         {
             var menu = new OdinMenuTree();
-            
+            menu.Add("Player Setting", AssetDatabase.LoadAssetAtPath<PlayerSetting>("Assets/Resources/Manager/PlayerSetting.asset"));
+
             foreach(var data in _audioData)
             {
                 menu.AddAllAssetsAtPath(data.Name, "Assets/", data, true, true);
             }
+            
+
 
             // foreach(var data in _buildingArea)
             // {
