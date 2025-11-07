@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce52dbda302a2cc4a85b2a4d184bf722, type: 3}
+  m_Name: MeteorStrike
+  m_EditorClassIdentifier: 
+  weaponName: Weapon Strike
+  fireRate: 5
+  damage: 20
+  projectileSpeed: 15
+  cooldownTimer: 6.7004433
+  projectilePrefab: {fileID: 4270612775838028252, guid: 04d419014ffdc8f49ba2d638ad1459b4, type: 3}
+  projectileHitEffectPrefab: {fileID: 2052332272077376235, guid: 59d69bf6004dcfb43a8ba8f13e8fa132, type: 3}
+  projectileType: 0
+  faceDirection: 1
