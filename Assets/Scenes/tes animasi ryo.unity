@@ -355,7 +355,7 @@ GameObject:
   - component: {fileID: 380303561}
   - component: {fileID: 380303560}
   - component: {fileID: 380303564}
-  - component: {fileID: 380303563}
+  - component: {fileID: 380303565}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -450,26 +450,13 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 5, y: 5, z: 5}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 168577613}
   - {fileID: 1041671213}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &380303563
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 380303559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2cfa77b3c009db49a9ec62338498350, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movespeed: 0
 --- !u!50 &380303564
 Rigidbody2D:
   serializedVersion: 5
@@ -485,7 +472,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -497,6 +484,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &380303565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380303559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71ec14c4d18b44989d2c8afca4e63735, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1041671212
 GameObject:
   m_ObjectHideFlags: 0
